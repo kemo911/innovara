@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.hero-section {
+    height: 100vh;
+}
+
+.ai-font {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.ai-font-p {
+    font-size: 1.3rem;
+}
+
+/* .navbar {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+} */
+
+.sm-text{
+    font-size: 0.9rem;
+}
+
+.btn-warning{
+    background-color: #fca311;
+}
+
+.content-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.gradient-bg {
+    background-color: #ffffff;
+    background-image: radial-gradient(circle farthest-corner at center, #14213d 0%, #ffffff 60%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
