@@ -26,12 +26,21 @@ body {
 }
 
 .btn-warning{
-    background-color: #fca311;
+    background-color: #04132D;
+    color: #ffffff;
+    border-color: #04132D;
+}
+
+.btn-warning:hover{
+    background-color: #184361;
+    color: #ffffff;
+    border-color: #184361;
 }
 
 .content-section {
     position: relative;
     overflow: hidden;
+    height: 100vh;
 }
 
 .gradient-bg {
@@ -40,9 +49,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 .image-container img {
-    width: 100%;
+    width: 100vh;
     height: auto;
 }
