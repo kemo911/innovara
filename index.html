@@ -12,6 +12,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
 </head>
 
 <body>
@@ -32,7 +34,7 @@
                             <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="services.html">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#foot">Contact</a>
@@ -48,8 +50,8 @@
         <!-- Hero Section -->
         <section class="hero-section    text-center d-flex align-items-center justify-content-center">
             <div class="container">
-                <h1 class="ai-font" id="hero-title"></h1>
-                <p id="hero-text" class="ai-font ai-front-p"></p>
+                <h1 class="ai-font" id="hero-title" style="font-weight: bolder;"></h1>
+                <p id="hero-text" style="font-weight: bold;" class="ai-font ai-front-p"></p>
             </div>
         </section>
     </div>
@@ -66,8 +68,9 @@
                     <p class="sm-text"><b>The Studio:</b> <br>Teach others/Teach yourself/Digital Products and service design. See more.</p>
                     <p class="sm-text"><b>The Lab:</b> <br> AI integration/ HCI Interaction. See more.</p>
                 </div>
-                <div class="col-md-6 image-container gradient-bg p-0">
-                    <img src="image123.png" alt="Placeholder Image" class="img-fluid">
+                <div class="col-md-6 image-container">
+                    <!-- <img src="image123.png" alt="Placeholder Image" class="img-fluid"> -->
+                    <object data="mobile.svg" class="img-fluid"> </object>
                 </div>
             </div>
         </section>
@@ -134,7 +137,35 @@
     
 
     <script>
-        VANTA.BIRDS({
+        // VANTA.BIRDS({
+        //     el: "#top",
+        //     mouseControls: true,
+        //     touchControls: true,
+        //     gyroControls: false,
+        //     minHeight: 200.00,
+        //     minWidth: 200.00,
+        //     scale: 1.00,
+        //     scaleMobile: 1.00,
+        //     backgroundColor: 0xfac670,
+        //     color1: 0x941A51,
+        //     color2: 0xffffff
+        // })
+
+        // VANTA.NET({
+        //     el: "#top",
+        //     mouseControls: true,
+        //     touchControls: true,
+        //     gyroControls: false,
+        //     minHeight: 200.00,
+        //     minWidth: 200.00,
+        //     scale: 1.00,
+        //     scaleMobile: 1.00,
+        //     color: 0x941A51,
+        //     backgroundColor: 0xfac670,
+        //     points: 20.00,
+        //     showDots: false
+        // })
+        VANTA.GLOBE({
             el: "#top",
             mouseControls: true,
             touchControls: true,
@@ -143,10 +174,11 @@
             minWidth: 200.00,
             scale: 1.00,
             scaleMobile: 1.00,
-            backgroundColor: 0xffffff,
-            color1: 0x04132D,
-            color2: 0xE4F7FF
+            color: 0xfac670,
+            color2: 0xfac670,
+            backgroundColor: 0xf2f2f2
         })
+
 
         var typed = new Typed('#hero-title', {
             strings: ["All your business in your pocket."],

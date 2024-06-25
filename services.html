@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Bootstrap Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+</head>
+
+<body>
+    <div id="top" style="height: 100vh;">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: transparent !important; position: absolute;">
+            <div class="container">
+                <a class="navbar-brand" href="#">Innovara</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Our Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#foot">Contact us</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <button type="button" class="btn btn-warning">Book an appointment</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content Sections -->
+        <div class="row" id="first-row" style="height: 100vh; background-color: #f2f2f2;">
+            <div class="col-md-6 d-flex align-items-center" >
+                <div style="margin-left: 0;">
+                    <h1 class="service_title" id="service1"  style="color: #fac670;"></h1>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center" >
+                <div style="width: 100%; display: flex; flex-direction: column; align-items: end;" class="text-align: center;">
+                    <div class="box first-row" style="background-color: #0A1022;">Custom Web Application Development</div>
+                    <div class="box first-row" style="background-color: #0A1022;">Mobile App Development</div>
+                    <div class="box first-row" style="background-color: #0A1022;">Backend Server Solutions</div>
+                    <div class="box first-row" style="background-color: #0A1022;">API Integration and Development</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="second-row" class="row" style="height: 100vh;">
+            <div class="col-md-6 d-flex justify-content-center align-items-center" style="background-color: #fac670;">
+                <div style="width: 100%; display: flex; flex-direction: column; align-items: start;">
+                    <div class="box second-row" style="background-color: #0A1022;">User Experience Research and Analysis</div>
+                    <div class="box second-row" style="background-color: #0A1022;">Interactive Prototyping and Wireframing</div>
+                    <div class="box second-row" style="background-color: #0A1022;">Visual Design and Branding</div>
+                    <div class="box second-row" style="background-color: #0A1022;">Usability Testing and Optimization</div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center" style="background-color: #0A1022;">
+                <div style="margin-right: 0; text-align: end;">
+                    <h1 class="service_title" id="service2" style="color: #fac670;"></h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Rows -->
+        <div id="third-row" class="row" style="height: 100vh;">
+            <div class="col-md-6 d-flex align-items-center" style="background-color: #f2f2f2;">
+                <div style="margin-left: 0;">
+                    <h1 class="service_title" id="service3" style="color: #0A1022;"></h1>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center" style="background-color: #f2f2f2;">
+                <div style="width: 100%; display: flex; flex-direction: column; align-items: end;" class="text-align: center;">
+                    <div class="box third-row" style="background-color: #fac670;">Cloud Migration Services</div>
+                    <div class="box third-row" style="background-color: #fac670;">Cloud Infrastructure Management</div>
+                    <div class="box third-row" style="background-color: #fac670;">Cloud Security Solutions</div>
+                    <div class="box third-row" style="background-color: #fac670;">DevOps and CI/CD</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="fourth-row" class="row" style="height: 100vh;">
+            <div class="col-md-6 d-flex justify-content-center align-items-center" style="background-color: #fac670;">
+                <div style="width: 100%; display: flex; flex-direction: column; align-items: start;">
+                    <div class="box fourth-row" style="background-color: #0A1022;">Digital Marketing Strategy</div>
+                    <div class="box fourth-row" style="background-color: #0A1022;">SEO Optimization</div>
+                    <div class="box fourth-row" style="background-color: #0A1022;">Content Creation and Management</div>
+                    <div class="box fourth-row" style="background-color: #0A1022;">Social Media Management</div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center" style="background-color: #0A1022;">
+                <div style="margin-right: 0; text-align: end;">
+                    <h1 class="service_title">
+                        Digital Marketing
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+        gsap.utils.toArray(".first-row, .third-row").forEach((box, i) => {
+            gsap.fromTo(box, { x: 200, opacity: 0 }, {
+                x: 0,
+                opacity: 1,
+                delay: i * 0.2,
+                duration: 0.5,
+                scrollTrigger: {
+                    trigger: box,
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                }
+            });
+        });
+
+        gsap.utils.toArray(".second-row, .fourth-row").forEach((box, i) => {
+            gsap.fromTo(box, { x: -200, opacity: 0 }, {
+                x: 0,
+                opacity: 1,
+                delay: i * 0.2,
+                duration: 0.5,
+                scrollTrigger: {
+                    trigger: box,
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                }
+            });
+        });
+
+        // Additional animations for better UX
+        gsap.from(".navbar", {
+            y: -50,
+            opacity: 0,
+            duration: 1
+        });
+
+        // gsap.from(".service_title", {
+        //     opacity: 0,
+        //     duration: 1,
+        // });
+
+        var typedText = new Typed('#service1', {
+            strings: ["Software Development"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: false,
+
+        });
+
+        var typedText = new Typed('#service2', {
+            strings: ["UI/UX"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: false,
+        });
+
+        var typedText = new Typed('#service3', {
+            strings: ["Cloud Solutions"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: false,
+        });
+
+        // // Scroll functionality to snap between rows
+        // let isScrolling;
+        // window.addEventListener('wheel', function(event) {
+        //     clearTimeout(isScrolling);
+        //     isScrolling = setTimeout(function() {
+        //         if (event.deltaY > 0) {
+        //             gsap.to(window, { duration: 0.1, scrollTo: window.scrollY + window.innerHeight });
+        //         } else {
+        //             gsap.to(window, { duration: 0.1, scrollTo: window.scrollY - window.innerHeight });
+        //         }
+        //     }, 50);
+        // });
+    </script>
+
+</body>
+
+</html>

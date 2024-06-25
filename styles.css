@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #f2f2f2;
 }
 
 .hero-section {
@@ -17,23 +17,23 @@ body {
     font-size: 1.3rem;
 }
 
-/* .navbar {
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-} */
-
-.sm-text{
+.sm-text {
     font-size: 0.9rem;
 }
 
-.btn-warning{
-    background-color: #04132D;
-    color: #ffffff;
+.d-flex{
+    padding-left: 10px;
+}
+
+.btn-warning {
+    background-color: #0A1022;
+    color: #f2f2f2;
     border-color: #04132D;
 }
 
-.btn-warning:hover{
+.btn-warning:hover {
     background-color: #184361;
-    color: #ffffff;
+    color: #f2f2f2;
     border-color: #184361;
 }
 
@@ -44,8 +44,8 @@ body {
 }
 
 .gradient-bg {
-    background-color: #ffffff;
-    background-image: radial-gradient(circle farthest-corner at center, #14213d 0%, #ffffff 60%);
+    background-color: #f2f2f2;
+    background-image: radial-gradient(circle farthest-corner at center, #14213d 0%, #f2f2f2 60%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,4 +55,75 @@ body {
 .image-container img {
     width: 100vh;
     height: auto;
+}
+
+.navbar {
+    position: relative;
+    z-index: 10;
+}
+
+#threejs-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.box {
+    height: 100px;
+    width: 80%;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.first-row, .third-row {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.second-row, .fourth-row {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.service_title {
+    font-size: 5em;
+    line-height: 0.8;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 10px;
+}
+
+.navbar-brand-white {
+    color: white;
+}
+
+.scroll-button {
+    background-color: #04132D;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-button:hover {
+    background-color: #184361;
 }
