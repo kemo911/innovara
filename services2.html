@@ -57,15 +57,15 @@
                 <div class="container overflow-hidden">
                     <div class="row gy-3 gy-lg-0 align-items-lg-center justify-content-lg-between">
                         <div class="col-12 col-lg-6 order-1 order-lg-0">
-                            <h6 class="display-4 fw-bold mb-3 ai-font">All your business in your pocket.</h2>
-                            <p class="fs-4 mb-5 ai-font ai-front-p"><b>We make it possible.</b></p>
-                            <p class="fs-4 mb-5 ai-font ai-front-p" id="hero-text"></p>
+                            <h6 class="display-4 fw-bold mb-3 ai-font">Unlock The Future Of Tomorrow With Our Comprehensive Services</h2>
+                            <!-- <p class="fs-4 mb-5 ai-font ai-front-p"><b>We make it possible.</b></p> -->
+                            <p class="fs-4 mb-5 ai-font ai-front-p" id="hero-text">Our expert solutions help businesses top the world regardless of the industry they serve.</p>
                             <div class="d-grid gap-2 d-sm-flex">
                                 <a href="#contact_div" class="btn btn-warning bsb-btn-xl rounded-pill" id="button_contact_us">Contact us</a>
                             </div>
                         </div>
                         <div class="col-12 col-lg-5">
-                            <img class="img-fluid pull-right" loading="lazy" src="robot.png" alt="Art of Design">
+                            <img class="img-fluid pull-right" loading="lazy" src="creative.png" alt="Art of Design">
                         </div>
                     </div>
                 </div>
@@ -75,85 +75,6 @@
 
     <!-- Content Sections -->
     <div id="block">
-        <section class="content-section d-flex">
-            <div class="container d-flex flex-column justify-content-center">
-                <div class="row mb-5">
-                    <div class="col-md-3 col-lg-3 col-sm-12 mb-5">
-                        <div class="card h-100">
-                            <div class="card-body d-flex flex-column text-center">
-                                <h5 class="card-title">Comprehensive Software Development</h5>
-                                <p class="card-text">Empower your business with bespoke software solutions designed to enhance productivity and foster innovation.</p>
-                                <a href="#" class="btn btn-outline-warning mt-auto rounded-pill">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-sm-12 mb-5">
-                        <div class="card h-100">
-                            <div class="card-body d-flex flex-column text-center">
-                                <h5 class="card-title">UX/UI Design & Auditing Services</h5>
-                                <p class="card-text">Transform your user experience with cutting-edge design and thorough audits to maximize engagement and satisfaction.</p>
-                                <a href="#" class="btn btn-outline-warning mt-auto rounded-pill">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-sm-12 mb-5">
-                        <div class="card h-100">
-                            <div class="card-body d-flex flex-column text-center">
-                                <h5 class="card-title">AI & Chatbot Integration</h5>
-                                <p class="card-text">Revolutionize customer interactions and streamline operations with advanced AI and chatbot technologies.</p>
-                                <a href="#" class="btn btn-outline-warning mt-auto rounded-pill">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-sm-12 mb-5">
-                        <div class="card h-100">
-                            <div class="card-body d-flex flex-column text-center">
-                                <h5 class="card-title">DevOps & IT Systems Management</h5>
-                                <p class="card-text">Optimize your IT infrastructure with expert DevOps strategies and comprehensive system management solutions.</p>
-                                <a href="#" class="btn btn-outline-warning mt-auto rounded-pill">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center mb-5">
-                    <div class="col-md-4 col-lg-4 col-sm-12">
-                        <button class="btn btn-warning btn-lg btn-block rounded-pill" style="width: 100%;">Discover all services</button>
-                    </div>
-                </div>
-                <div class="row justify-content-center mb-5">
-                    <div class="col-md-5 col-lg-5 col-sm-12">
-                        <img src="mock.png" alt="Placeholder Image" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="testimonials content-section text-center my-5">
-          <div class="container">
-              <h2>What Our Clients Say</h2>
-              <div class="row">
-                  <div class="col-md-4">
-                      <blockquote class="blockquote">
-                          <p>"EchoMinds transformed our business with their innovative solutions."</p>
-                          <footer class="blockquote-footer">John Doe, CEO of Company</footer>
-                      </blockquote>
-                  </div>
-                  <div class="col-md-4">
-                      <blockquote class="blockquote">
-                          <p>"Their team provided exceptional support and expertise. Highly recommended!"</p>
-                          <footer class="blockquote-footer">Jane Smith, Marketing Director</footer>
-                      </blockquote>
-                  </div>
-                  <div class="col-md-4">
-                      <blockquote class="blockquote">
-                          <p>"We saw a significant boost in productivity thanks to their software solutions."</p>
-                          <footer class="blockquote-footer">Mark Johnson, CTO of Tech Corp</footer>
-                      </blockquote>
-                  </div>
-              </div>
-          </div>
-      </section>
-
         <div class="row" id="contact_div">
           <div class="col-md-6 offset-md-3">
               <h3 class="text-center">Contact Us</h3>
@@ -298,24 +219,6 @@
                     $('#service_other_input').hide()
                 }
             })
-
-            var typedText = new Typed('#hero-text', {
-                strings: ["Whether you're a startup, a growing business, or an established brand. Give life and boost your digital business using our Tech solutions with Artificial Intelligence."],
-                typeSpeed: 20,
-                backSpeed: 25,
-                loop: false,
-                onComplete: function () {
-                    $('#button_contact_us').css({
-                        'display': 'block',
-                        'opacity': 0,
-                        'top': '-50px'
-                    }).animate({
-                        'top': '0px',
-                        'opacity': 1
-                    }, 1500);
-                }
-            });
-
 
 
             $('#form_send').on('submit', function(e) {
