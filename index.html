@@ -17,6 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/heroes/hero-2/assets/css/hero-2.css">
+    <script src="https://kit.fontawesome.com/069fa84c16.js" crossorigin="anonymous"></script>
         
 </head>
 
@@ -81,7 +82,7 @@
                     <div class="col-md-3 col-lg-3 col-sm-12 mb-5">
                         <div class="card h-100">
                             <div class="card-body d-flex flex-column text-center">
-                                <h5 class="card-title">Comprehensive Software Development</h5>
+                                <h5 class="card-title">Custom Software Development</h5>
                                 <p class="card-text">Empower your business with bespoke software solutions designed to enhance productivity and foster innovation.</p>
                                 <a href="#" class="btn btn-outline-warning mt-auto rounded-pill">Learn More</a>
                             </div>
@@ -90,7 +91,7 @@
                     <div class="col-md-3 col-lg-3 col-sm-12 mb-5">
                         <div class="card h-100">
                             <div class="card-body d-flex flex-column text-center">
-                                <h5 class="card-title">UX/UI Design & Auditing Services</h5>
+                                <h5 class="card-title">UX/UI & Digital Design</h5>
                                 <p class="card-text">Transform your user experience with cutting-edge design and thorough audits to maximize engagement and satisfaction.</p>
                                 <a href="#" class="btn btn-outline-warning mt-auto rounded-pill">Learn More</a>
                             </div>
@@ -127,6 +128,55 @@
                 </div>
             </div>
         </section>
+
+        <section class="content-section d-flex text-center">
+            <div class="container">
+                <h1 style="padding-bottom: 20px;">Why Choose Us?</h1>
+                <blockquote class="blockquote" style="padding-bottom: 40px;">
+                    <p> At Echo Minds , we understand the unique challenges businesses face in today's digital world. Our experienced team delivers innovative, tailored solutions that fit expectations. With a commitment to excellence and a customer-centric approach, we ensure high-quality results that drive your business forward. Partner with us to transform your operations, enhance customer interactions, and achieve your strategic goals.</p>
+                </blockquote>
+        
+                <div class="row">
+                    <div class="col-md-3 fade-in">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column" style="border-color: #832b59;">
+                                <i class="fa-solid fa-medal fa-3x" style="color: #832b59; padding-bottom: 5%;"></i>
+                                <h5 class="card-title">Expertise and Experience</h5>
+                                <p class="card-text">Our seasoned team solves complex problems and delivers innovative solutions, ensuring your projects are in expert hands.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 fade-in">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column" style="border-color: #832b59;">
+                                <i class="fa-solid fa-people-group fa-3x" style="color: #832b59; padding-bottom: 5%;"></i>
+                                <h5 class="card-title">Customer-Centric Approach</h5>
+                                <p class="card-text">We align our solutions with your business needs through close collaboration and open communication.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 fade-in">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column" style="border-color: #832b59;">
+                                <i class="fa-regular fa-lightbulb fa-3x" style="color: #832b59; padding-bottom: 5%;"></i>
+                                <h5 class="card-title">Innovative Solutions</h5>
+                                <p class="card-text">We leverage the latest technologies to deliver solutions that keep your business competitive and future-ready.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 fade-in">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column" style="border-color: #832b59;">
+                                <i class="fa-regular fa-comment-dots fa-3x" style="color: #832b59; padding-bottom: 5%;"></i>
+                                <h5 class="card-title">Comprehensive Support</h5>
+                                <p class="card-text">We provide ongoing support and maintenance to keep your systems efficient and up-to-date.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
 
         <section class="testimonials content-section text-center my-5">
           <div class="container">
@@ -273,6 +323,19 @@
 
     <script>
         $(document).ready(function () {
+
+            $(window).on('scroll', function() {
+                $('.fade-in').each(function(i) {
+                    var top_of_element = $(this).offset().top;
+                    var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+                    var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+                    var top_of_screen = $(window).scrollTop();
+
+                    if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)) {
+                        $(this).delay(i * 500).animate({'opacity': '1'}, 1000);
+                    }
+                });
+            });
 
             $('#looking_for').on('change',function(){
                 if(this.value === 'service'){
