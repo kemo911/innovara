@@ -6,7 +6,8 @@ body {
 }
 
 .hero-section {
-    height: 100vh;
+    min-height: 100vh;
+    /* padding-top: 100px; */
 }
 
 .ai-font {
@@ -52,7 +53,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: auto;
     padding: 3rem 0;
 }
 
@@ -168,12 +168,6 @@ footer .nav-link:hover {
 footer p {
     color: #6c757d;
 }
-
-/* 
-.mt-auto{
-    width: 50%;
-    align-self : center;
-} */
 
 .navbar-brand img {
     max-width: 3vw;

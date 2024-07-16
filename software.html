@@ -53,7 +53,7 @@
 
         <!-- Hero Section -->
         <section class="hero-section text-center d-flex align-items-center justify-content-center">
-            <section class="bsb-hero-2 px-3">
+            <section class="bsb-hero-2 px-3" style="padding-top: 5rem;">
                 <div class="container overflow-hidden">
                     <div class="row gy-3 gy-lg-0 align-items-lg-center justify-content-lg-between">
                         <div class="col-12 col-lg-6 order-1 order-lg-0">
@@ -156,100 +156,102 @@
                 <p>"We value your messages. Feel free to reach out to us with any inquiries."</p>
                 <footer class="blockquote-footer">EchoMinds Team</footer>
               </blockquote>
-              <form id="form_send">
-                  <div class="mb-3">
-                      <label class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              <div class="container">
+                <form id="form_send">
+                    <div class="mb-3">
+                        <label class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" id="exampleInputName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="phone">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">What are you looking for?</label>
+                      <select class="form-control" id="looking_for">
+                          <option disabled selected>Select an option</option>
+                          <option value="service">Service</option>
+                          <option value="b2b">Business Partnership</option>
+                      </select>
+                  </div>
+                    <div class="mb-3" id="service_div" style="display: none;">
+                      <label class="form-label">Services</label>
+                      <select class="form-control" id="service_selector">
+                          <option disabled selected>Select an option</option>
+                          <option value="service">Software Development</option>
+                          <option value="b2b">UX/UI Design & Auditing Services</option>
+                          <option value="b2b">AI & Chatbot Integration</option>
+                          <option value="b2b">DevOps & IT Systems Management</option>
+                          <option value="other">Other</option>
+                      </select>
+                  </div>
+                  <div class="mb-3" style="display: none;" id="service_other_input">
+                      <label class="form-label">Describe the service you need</label>
+                      <input type="text" class="form-control" id="custom_industry">
                   </div>
                   <div class="mb-3">
-                      <label class="form-label">Name</label>
-                      <input type="text" class="form-control" id="exampleInputName" required>
+                      <label class="form-label">Industry</label>
+                      <select class="form-control" id="industry">
+                              <option value="0" disabled selected>Select your company's industry</option>
+                              <option value="Financial Services">Financial Services</option>
+                              <option value="Healthcare">Healthcare</option>
+                              <option value="Manufacturing">Manufacturing</option>
+                              <option value="Retail">Retail</option>
+                              <option value="Education">Education</option>
+                              <option value="Logistics and Transportation">Logistics and Transportation</option>
+                              <option value="Telecommunications">Telecommunications</option>
+                              <option value="Real Estate">Real Estate</option>
+                              <option value="Legal Services">Legal Services</option>
+                              <option value="Hospitality">Hospitality</option>
+                              <option value="Energy and Utilities">Energy and Utilities</option>
+                              <option value="Government and Public Sector">Government and Public Sector</option>
+                              <option value="Agriculture">Agriculture</option>
+                              <option value="Media and Entertainment">Media and Entertainment</option>
+                              <option value="Construction">Construction</option>
+                              <option value="Insurance">Insurance</option>
+                              <option value="Automotive">Automotive</option>
+                              <option value="Pharmaceuticals">Pharmaceuticals</option>
+                              <option value="Aerospace and Defense">Aerospace and Defense</option>
+                              <option value="IT and Software Development">IT and Software Development</option>
+                              <option value="Other">Other</option>
+                      </select>
+                  </div>
+                  <div class="mb-3" style="display: none;" id="other_input">
+                      <label class="form-label">Tell us about your industry </label>
+                      <input type="text" class="form-control" id="custom_industry">
                   </div>
                   <div class="mb-3">
-                      <label class="form-label">Phone Number</label>
-                      <input type="text" class="form-control" id="phone">
+                      <label class="form-label">Number of employees</label>
+                      <select class="form-control">
+                          <option disabled selected>Select an option</option>
+                          <option value="service">Less than 10</option>
+                          <option value="b2b">Between 11 and 50</option>
+                          <option value="b2b">Between 51 and 100</option>
+                          <option value="b2b">More than 100</option>
+                      </select>
                   </div>
-                  <div class="mb-3">
-                    <label class="form-label">What are you looking for?</label>
-                    <select class="form-control" id="looking_for">
-                        <option disabled selected>Select an option</option>
-                        <option value="service">Service</option>
-                        <option value="b2b">Business Partnership</option>
-                    </select>
-                </div>
+  
                   <div class="mb-3" id="service_div" style="display: none;">
-                    <label class="form-label">Services</label>
-                    <select class="form-control" id="service_selector">
-                        <option disabled selected>Select an option</option>
-                        <option value="service">Software Development</option>
-                        <option value="b2b">UX/UI Design & Auditing Services</option>
-                        <option value="b2b">AI & Chatbot Integration</option>
-                        <option value="b2b">DevOps & IT Systems Management</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                <div class="mb-3" style="display: none;" id="service_other_input">
-                    <label class="form-label">Describe the service you need</label>
-                    <input type="text" class="form-control" id="custom_industry">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Industry</label>
-                    <select class="form-control" id="industry">
-                            <option value="0" disabled selected>Select your company's industry</option>
-                            <option value="Financial Services">Financial Services</option>
-                            <option value="Healthcare">Healthcare</option>
-                            <option value="Manufacturing">Manufacturing</option>
-                            <option value="Retail">Retail</option>
-                            <option value="Education">Education</option>
-                            <option value="Logistics and Transportation">Logistics and Transportation</option>
-                            <option value="Telecommunications">Telecommunications</option>
-                            <option value="Real Estate">Real Estate</option>
-                            <option value="Legal Services">Legal Services</option>
-                            <option value="Hospitality">Hospitality</option>
-                            <option value="Energy and Utilities">Energy and Utilities</option>
-                            <option value="Government and Public Sector">Government and Public Sector</option>
-                            <option value="Agriculture">Agriculture</option>
-                            <option value="Media and Entertainment">Media and Entertainment</option>
-                            <option value="Construction">Construction</option>
-                            <option value="Insurance">Insurance</option>
-                            <option value="Automotive">Automotive</option>
-                            <option value="Pharmaceuticals">Pharmaceuticals</option>
-                            <option value="Aerospace and Defense">Aerospace and Defense</option>
-                            <option value="IT and Software Development">IT and Software Development</option>
-                            <option value="Other">Other</option>
-                    </select>
-                </div>
-                <div class="mb-3" style="display: none;" id="other_input">
-                    <label class="form-label">Tell us about your industry </label>
-                    <input type="text" class="form-control" id="custom_industry">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Number of employees</label>
-                    <select class="form-control">
-                        <option disabled selected>Select an option</option>
-                        <option value="service">Less than 10</option>
-                        <option value="b2b">Between 11 and 50</option>
-                        <option value="b2b">Between 51 and 100</option>
-                        <option value="b2b">More than 100</option>
-                    </select>
-                </div>
-
-                <div class="mb-3" id="service_div" style="display: none;">
-                    <label class="form-label">Services</label>
-                    <select class="form-control">
-                        <option disabled selected>Select an option</option>
-                        <option value="service">Software Development</option>
-                        <option value="b2b">UX/UI Design & Auditing Services</option>
-                        <option value="b2b">AI & Chatbot Integration</option>
-                        <option value="b2b">DevOps & IT Systems Management</option>
-                    </select>
-                </div>
-                  <div class="mb-3">
-                      <label class="form-label">Message</label>
-                      <textarea class="form-control" placeholder=""></textarea>
+                      <label class="form-label">Services</label>
+                      <select class="form-control">
+                          <option disabled selected>Select an option</option>
+                          <option value="service">Software Development</option>
+                          <option value="b2b">UX/UI Design & Auditing Services</option>
+                          <option value="b2b">AI & Chatbot Integration</option>
+                          <option value="b2b">DevOps & IT Systems Management</option>
+                      </select>
                   </div>
-                  <button type="submit" class="btn btn-warning">Send</button>
-              </form>
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" placeholder=""></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-warning">Send</button>
+                </form>
+              </div>
           </div>
       </div>
 
