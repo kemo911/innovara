@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EchoMinds</title>
+    <title>Innovara</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
@@ -17,15 +17,25 @@
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/heroes/hero-2/assets/css/hero-2.css">
-        
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N2GNSLH3');</script>
+    <!-- End Google Tag Manager -->    
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N2GNSLH3"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="top">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="bird.png" /> EchoMinds</a>
+                <a class="navbar-brand" href="index.html"><img src="bird.png" /> Innovara</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -34,8 +44,16 @@
                         <li class="nav-item px-2">
                             <a class="nav-link"href="index.html">Home</a>
                         </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="index.html#services_section">Services</a>
+                        <li class="nav-item px-2 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               Services
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="software.html">Custom Software Development</a></li>
+                              <li><a class="dropdown-item" href="ux-ui.html">UX/UI & Digital Design</a></li>
+                              <li><a class="dropdown-item" href="ai-bot.html">AI & Chatbot Integration</a></li>
+                              <li><a class="dropdown-item" href="devops.html">DevOps & IT Systems Management</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item px-2">
                             <a class="nav-link" href="index.html#why_us">About</a>
@@ -154,17 +172,17 @@
               <h3 class="text-center">Contact Us</h3>
               <blockquote class="blockquote" style="text-align: center;">
                 <p>"We value your messages. Feel free to reach out to us with any inquiries."</p>
-                <footer class="blockquote-footer">EchoMinds Team</footer>
+                <footer class="blockquote-footer">Innovara Team</footer>
               </blockquote>
               <div class="container">
                 <form id="form_send">
                     <div class="mb-3">
                         <label class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Name</label>
-                        <input type="text" class="form-control" id="exampleInputName" required>
+                        <input type="text" class="form-control" id="name" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Phone Number</label>
@@ -175,23 +193,23 @@
                       <select class="form-control" id="looking_for">
                           <option disabled selected>Select an option</option>
                           <option value="service">Service</option>
-                          <option value="b2b">Business Partnership</option>
+                          <option value="Business Partnership">Business Partnership</option>
                       </select>
                   </div>
                     <div class="mb-3" id="service_div" style="display: none;">
                       <label class="form-label">Services</label>
                       <select class="form-control" id="service_selector">
                           <option disabled selected>Select an option</option>
-                          <option value="service">Software Development</option>
-                          <option value="b2b">UX/UI Design & Auditing Services</option>
-                          <option value="b2b">AI & Chatbot Integration</option>
-                          <option value="b2b">DevOps & IT Systems Management</option>
+                          <option value="Software Development">Software Development</option>
+                          <option value="UX/UI Design & Auditing Services">UX/UI Design & Auditing Services</option>
+                          <option value="AI & Chatbot Integration">AI & Chatbot Integration</option>
+                          <option value="DevOps & IT Systems Management">DevOps & IT Systems Management</option>
                           <option value="other">Other</option>
                       </select>
                   </div>
                   <div class="mb-3" style="display: none;" id="service_other_input">
                       <label class="form-label">Describe the service you need</label>
-                      <input type="text" class="form-control" id="custom_industry">
+                      <input type="text" class="form-control" id="custom_service">
                   </div>
                   <div class="mb-3">
                       <label class="form-label">Industry</label>
@@ -226,28 +244,18 @@
                   </div>
                   <div class="mb-3">
                       <label class="form-label">Number of employees</label>
-                      <select class="form-control">
+                      <select class="form-control" id="number_of_employees">
                           <option disabled selected>Select an option</option>
-                          <option value="service">Less than 10</option>
-                          <option value="b2b">Between 11 and 50</option>
-                          <option value="b2b">Between 51 and 100</option>
-                          <option value="b2b">More than 100</option>
+                          <option value="Less than 10">Less than 10</option>
+                          <option value="Between 11 and 50">Between 11 and 50</option>
+                          <option value="Between 51 and 100">Between 51 and 100</option>
+                          <option value="More than 100">More than 100</option>
                       </select>
                   </div>
   
-                  <div class="mb-3" id="service_div" style="display: none;">
-                      <label class="form-label">Services</label>
-                      <select class="form-control">
-                          <option disabled selected>Select an option</option>
-                          <option value="service">Software Development</option>
-                          <option value="b2b">UX/UI Design & Auditing Services</option>
-                          <option value="b2b">AI & Chatbot Integration</option>
-                          <option value="b2b">DevOps & IT Systems Management</option>
-                      </select>
-                  </div>
                     <div class="mb-3">
                         <label class="form-label">Message</label>
-                        <textarea class="form-control" placeholder=""></textarea>
+                        <textarea class="form-control" id="message" placeholder=""></textarea>
                     </div>
                     <button type="submit" class="btn btn-warning">Send</button>
                 </form>
@@ -258,12 +266,12 @@
         <div class="container-fluid" id="foot">
             <footer class="py-3 my-4">
                 <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Service</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+                    <li class="nav-item"><a href="index.html#why_us" class="nav-link px-2 text-body-secondary">About</a></li>
+                    <li class="nav-item"><a href="index.html#services_section" class="nav-link px-2 text-body-secondary">Service</a></li>
+                    <li class="nav-item"><a href="#contact_div" class="nav-link px-2 text-body-secondary">Contact</a></li>
                 </ul>
-                <p class="text-center text-body-secondary">&copy; 2024 Company, Inc</p>
+                <p class="text-center text-body-secondary">&copy; 2024 Innovara, Inc</p>
             </footer>
         </div>
     </div>
@@ -302,12 +310,31 @@
 
                 const name = $('#name').val();
                 const email = $('#email').val();
+                const phone = $('#phone').val();
+                const looking_for = $('#looking_for').val();
+                const service_selector = $('#service_selector').val();
+                const custom_service = $('#custom_service').val();
+                const industry = $('#industry').val();
+                const custom_industry = $('#custom_industry').val();
+                const number_of_employees = $('#number_of_employees').val();
+                const message = $('#message').val();
 
+                //url: 'https://innovara-email-yytl4pszea-uc.a.run.app/send-email',
                 $.ajax({
-                    url: 'http://localhost:5000/send-email',
+                    url: 'https://innovara-email-yytl4pszea-uc.a.run.app/send-email',
                     type: 'POST',
                     contentType: 'application/json',
-                    data: JSON.stringify({ name: 'test', email: 'ops@ccc.com' }),
+                    data: JSON.stringify({ 
+                        name, email , phone,
+                        looking_for,
+                        service_selector,
+                        custom_service,
+                        industry,
+                        custom_industry,
+                        number_of_employees,
+                        message,
+                        pageSource : "Software page"
+                    }),
                     success: function(response) {
                         alert(response.message);
                     },

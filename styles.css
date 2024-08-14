@@ -232,3 +232,14 @@ footer p {
 .block_contact {
     padding-top: 10%;
 }
+
+
+#foot{
+    padding-left: 0;
+    padding-right: 0;
+    background-color: transparent;
+}
+
+footer{
+    background-color: transparent;
+}
